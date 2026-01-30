@@ -1,0 +1,283 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact" description="Get in touch with SiRelations. Let's discuss how AI can transform your business.">
+  <section class="hero-small">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Let's start a conversation</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Get in touch</h2>
+          <p class="mt-md">
+            Have a project in mind? Want to learn more about our services?
+            We'd love to hear from you.
+          </p>
+
+          <div class="contact-methods mt-xl">
+            <div class="contact-method">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:hello@sirelations.nl">hello@sirelations.nl</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>Netherlands, EU</p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h3>Response Time</h3>
+                <p>Within 24 hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company (optional)</label>
+              <input type="text" id="company" name="company" placeholder="Your company">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or question..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send message</button>
+
+            <p class="form-note mt-md">
+              We'll get back to you within 24 hours. Your information is kept confidential.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-section">
+    <div class="container">
+      <div class="text-center">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-grid mt-xl">
+        <div class="faq-item">
+          <h3>What industries do you work with?</h3>
+          <p>
+            We work across various industries including finance, healthcare,
+            retail, and technology. Our solutions are adaptable to different
+            business contexts.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How long does a typical project take?</h3>
+          <p>
+            Project timelines vary based on complexity. A strategy engagement
+            might take 2-4 weeks, while a full implementation could span
+            several months.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you offer ongoing support?</h3>
+          <p>
+            Yes, we offer maintenance and support packages to ensure your
+            AI solutions continue to perform optimally after deployment.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do you handle data privacy?</h3>
+          <p>
+            We're fully GDPR compliant and take data privacy seriously.
+            We can work with on-premise solutions or secure cloud
+            environments based on your requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-small {
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .hero-small h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .hero-small p {
+    font-size: 1.125rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .contact-info h2 {
+    color: var(--color-text);
+  }
+
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .method-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-elevated);
+    border-radius: 12px;
+    color: var(--color-accent);
+    flex-shrink: 0;
+  }
+
+  .contact-method h3 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+  }
+
+  .contact-method p,
+  .contact-method a {
+    font-size: 0.875rem;
+  }
+
+  .contact-form-wrapper {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: var(--space-xl);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-lg);
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: var(--color-text);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .btn-full {
+    width: 100%;
+  }
+
+  .form-note {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .faq-section {
+    background: var(--color-bg-secondary);
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .faq-item {
+    padding: var(--space-lg);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+  }
+
+  .faq-item h3 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+  }
+
+  .faq-item p {
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

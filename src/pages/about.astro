@@ -1,0 +1,218 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About" description="Learn about SiRelations - a Dutch AI services startup helping businesses leverage artificial intelligence.">
+  <section class="hero-small">
+    <div class="container">
+      <h1>About SiRelations</h1>
+      <p>AI services with a human approach</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>Our Story</h2>
+          <p class="mt-md">
+            SiRelations was founded with a simple belief: artificial intelligence
+            should be accessible to every business, not just tech giants.
+          </p>
+          <p class="mt-md">
+            Based in the Netherlands, we combine deep technical expertise with
+            practical business understanding. We don't just build AI solutions —
+            we help you understand them, implement them, and get real value from them.
+          </p>
+          <p class="mt-md">
+            Our approach is pragmatic and results-focused. We cut through the hype
+            to deliver AI solutions that actually work for your specific needs
+            and constraints.
+          </p>
+        </div>
+        <div class="about-visual">
+          <div class="value-cards">
+            <div class="value-card">
+              <span class="value-icon">🎯</span>
+              <h3>Pragmatic</h3>
+              <p>Focus on real results, not buzzwords</p>
+            </div>
+            <div class="value-card">
+              <span class="value-icon">🤝</span>
+              <h3>Collaborative</h3>
+              <p>We work with you, not just for you</p>
+            </div>
+            <div class="value-card">
+              <span class="value-icon">🔒</span>
+              <h3>Trustworthy</h3>
+              <p>GDPR compliant, transparent, reliable</p>
+            </div>
+            <div class="value-card">
+              <span class="value-icon">🚀</span>
+              <h3>Forward-thinking</h3>
+              <p>Always learning, always improving</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mission-section">
+    <div class="container">
+      <div class="mission-content text-center">
+        <h2>Our Mission</h2>
+        <p class="mission-statement mt-lg">
+          "To democratize artificial intelligence by making powerful AI solutions
+          accessible, understandable, and valuable for businesses of all sizes."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2>Based in the Netherlands</h2>
+        <p class="mt-md">
+          We're proud to be a Dutch company, operating within the EU regulatory
+          framework and committed to the highest standards of data protection and privacy.
+        </p>
+      </div>
+
+      <div class="location-features mt-xl">
+        <div class="location-feature">
+          <h3>🇪🇺 EU-Based</h3>
+          <p>Operating within European regulations and standards</p>
+        </div>
+        <div class="location-feature">
+          <h3>🔐 GDPR Compliant</h3>
+          <p>Full compliance with EU data protection requirements</p>
+        </div>
+        <div class="location-feature">
+          <h3>🌍 Global Reach</h3>
+          <p>Serving clients across Europe and beyond</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container text-center">
+      <h2>Want to work with us?</h2>
+      <p class="mt-md">We'd love to hear about your project.</p>
+      <a href="/contact" class="btn btn-primary mt-lg">Get in touch</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-small {
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .hero-small h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .hero-small p {
+    font-size: 1.125rem;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+
+  .about-content h2 {
+    color: var(--color-text);
+  }
+
+  .about-content p {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  .value-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .value-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: var(--space-lg);
+    text-align: center;
+  }
+
+  .value-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: var(--space-sm);
+  }
+
+  .value-card h3 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+  }
+
+  .value-card p {
+    font-size: 0.75rem;
+    margin: 0 auto;
+  }
+
+  .mission-section {
+    background: var(--color-bg-secondary);
+  }
+
+  .mission-statement {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    font-style: italic;
+    max-width: 800px;
+    margin: var(--space-lg) auto 0;
+  }
+
+  .location-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .location-feature {
+    text-align: center;
+    padding: var(--space-lg);
+  }
+
+  .location-feature h3 {
+    font-size: 1.125rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+  }
+
+  .cta-section {
+    border-top: 1px solid var(--color-border);
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .value-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-features {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
