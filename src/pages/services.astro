@@ -2,422 +2,327 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Services" description="SiRelations offers the Discernment Snapshot — a bounded assessment of human oversight capacity in AI-influenced decision contexts. 72 hours. Actionable output.">
-  <section class="hero-small">
+<BaseLayout title="Services" description="Applied research tools for organizations navigating AI governance requirements. Our assessments measure human oversight capacity.">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
-      <h1>Services</h1>
-      <p>Measuring human oversight capacity</p>
+      <div class="hero-content">
+        <h1>Applied research for AI governance</h1>
+        <p class="hero-description">
+          We translate our foundational research into practical tools for organizations preparing for AI governance requirements. Our assessments measure what regulations assume but don't test: whether humans can actually exercise meaningful oversight.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Primary Service -->
+  <!-- Primary Product -->
   <section class="section">
     <div class="container">
-      <div class="service-intro">
-        <div class="service-content">
-          <h2>The Discernment Snapshot</h2>
-          <p class="mt-md">
-            A bounded, decision-ready assessment of human discernment in one concrete
-            decision context where AI systems play a role — as visible expert,
-            as agentic team, as embedded infrastructure, or as external influence.
+      <div class="product-grid">
+        <div class="product-content">
+          <span class="product-tag">Assessment</span>
+          <h2>Discernment Snapshot</h2>
+          <p>
+            A focused assessment of human oversight capacity in one concrete decision context where AI systems play a role. Not a compliance checklist — a measurement of whether the humans involved can actually steer.
           </p>
-          <p class="mt-md">
-            Not a generic AI audit. Not a compliance checklist. A focused measurement
-            of whether the humans involved can actually steer.
+          <p>
+            The Snapshot examines how decision-making operates under AI influence, identifies vulnerabilities where oversight breaks down, and provides actionable recommendations for strengthening discernment.
           </p>
-          <a href="https://discernment.ai/services" class="btn btn-primary mt-lg" rel="noopener">
-            Full details at discernment.ai
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <a href="https://discernment.ai" class="btn btn-primary" rel="noopener">
+            Learn more at discernment.ai
           </a>
         </div>
-        <div class="service-specs">
-          <div class="spec-card">
-            <div class="spec-label">Scope</div>
-            <div class="spec-value">One decision context</div>
+        <div class="product-specs">
+          <div class="spec-item">
+            <span class="spec-label">Scope</span>
+            <span class="spec-value">One decision context</span>
           </div>
-          <div class="spec-card">
-            <div class="spec-label">Turnaround</div>
-            <div class="spec-value">72 hours</div>
+          <div class="spec-item">
+            <span class="spec-label">Duration</span>
+            <span class="spec-value">72 hours</span>
           </div>
-          <div class="spec-card">
-            <div class="spec-label">Output</div>
-            <div class="spec-value">Memo + Checklist</div>
-          </div>
-          <div class="spec-card">
-            <div class="spec-label">Price</div>
-            <div class="spec-value">€450</div>
+          <div class="spec-item">
+            <span class="spec-label">Output</span>
+            <span class="spec-value">Assessment memo + Checklist</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Process -->
-  <section class="section process-section">
+  <!-- What We Assess -->
+  <section class="section section-alt">
     <div class="container">
-      <div class="text-center">
-        <h2>How it works</h2>
-      </div>
+      <h2 class="section-title">What we assess</h2>
+      <p class="section-subtitle">The Snapshot examines four dimensions of human-AI interaction.</p>
 
-      <div class="process-steps mt-xl" role="list">
-        <article class="step" role="listitem">
-          <div class="step-number" aria-hidden="true">1</div>
-          <h3>Intake</h3>
-          <p>Async questionnaire about decision context, system influences, and friction points (~15 min)</p>
+      <div class="assess-grid">
+        <article class="assess-card">
+          <h3>Influence recognition</h3>
+          <p>Can humans identify when and how AI systems shape their thinking? We test awareness of influence patterns as they occur.</p>
         </article>
-        <div class="step-connector" aria-hidden="true"></div>
-        <article class="step" role="listitem">
-          <div class="step-number" aria-hidden="true">2</div>
-          <h3>Session</h3>
-          <p>Structured online analysis of how decision-making operates under AI influence, including mini-simulation (45-60 min)</p>
+
+        <article class="assess-card">
+          <h3>Override capacity</h3>
+          <p>When AI recommendations conflict with human judgment, what happens? We examine the practical conditions for meaningful disagreement.</p>
         </article>
-        <div class="step-connector" aria-hidden="true"></div>
-        <article class="step" role="listitem">
-          <div class="step-number" aria-hidden="true">3</div>
-          <h3>Demo</h3>
-          <p>Live demonstration of the measurement chain — proof that the method is concrete and reproducible (10-15 min)</p>
+
+        <article class="assess-card">
+          <h3>Responsibility tracking</h3>
+          <p>Where does accountability live in AI-assisted decisions? We map how responsibility diffuses across human-AI workflows.</p>
         </article>
-        <div class="step-connector" aria-hidden="true"></div>
-        <article class="step" role="listitem">
-          <div class="step-number" aria-hidden="true">4</div>
-          <h3>Output</h3>
-          <p>Written deliverables within 72 hours: Memo (3-5 pages) + Checklist (1 page)</p>
+
+        <article class="assess-card">
+          <h3>Intervention points</h3>
+          <p>What mechanisms restore human agency when oversight weakens? We identify concrete leverage points for strengthening discernment.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Deliverables -->
+  <!-- Regulatory Context -->
   <section class="section">
     <div class="container">
-      <div class="text-center">
-        <h2>What you get</h2>
-      </div>
-
-      <div class="deliverables-grid mt-xl">
-        <article class="deliverable-card">
-          <div class="deliverable-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          </div>
-          <h3>Memo (3-5 pages)</h3>
-          <ul class="deliverable-list" role="list">
-            <li>Patterns identified in the decision context</li>
-            <li>Vulnerabilities where AI influence is unnoticed</li>
-            <li>Decision bottlenecks where responsibility diffuses</li>
-            <li>Development opportunities for strengthening discernment</li>
-            <li>Explicit assumptions and scope boundaries</li>
-          </ul>
-        </article>
-
-        <article class="deliverable-card">
-          <div class="deliverable-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-          </div>
-          <h3>Checklist (1 page)</h3>
-          <ul class="deliverable-list" role="list">
-            <li>Concrete discernment checks for immediate use</li>
-            <li>Decision agreements for the team</li>
-            <li>When to pause and verify</li>
-            <li>What to document and why</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- On-ramp -->
-  <section class="section onramp-section">
-    <div class="container">
-      <div class="onramp-grid">
-        <div class="onramp-content">
-          <h2>Not sure yet?</h2>
-          <p class="mt-md">
-            <strong>On-ramp</strong> — a lighter entry point. Short intake, focused conversation,
-            mini-memo (1 page: 3 observations + 3 actions). 48 hours. €100.
+      <div class="context-grid">
+        <div class="context-content">
+          <h2>Regulatory alignment</h2>
+          <p>
+            The EU AI Act requires human oversight of high-risk AI systems. Article 14 mandates that humans can "correctly interpret" AI output and decide when to override. Article 4 requires AI literacy.
           </p>
-          <p class="mt-md">
-            Use it to test whether the Snapshot is the right next step for your situation.
+          <p>
+            These requirements assume capacities that regulations don't test. Our assessments address that gap — measuring whether designated overseers have the capacity to do what compliance frameworks assume.
           </p>
         </div>
-        <div class="onramp-cta">
-          <a href="/contact" class="btn btn-secondary">Ask about On-ramp</a>
+        <div class="context-cards">
+          <div class="context-card">
+            <h4>EU AI Act</h4>
+            <p>Article 14 oversight requirements</p>
+          </div>
+          <div class="context-card">
+            <h4>AI Literacy</h4>
+            <p>Article 4 capability mandates</p>
+          </div>
+          <div class="context-card">
+            <h4>Impact Assessment</h4>
+            <p>FRAIA and similar frameworks</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Regulatory Alignment -->
-  <section class="section">
+  <!-- CTA Section -->
+  <section class="section section-cta">
     <div class="container">
-      <div class="text-center">
-        <h2>Regulatory alignment</h2>
-        <p class="mt-md">The Snapshot supports compliance — but from human capacity, not checkbox completion.</p>
+      <div class="cta-content">
+        <h2>Get started</h2>
+        <p>Contact us to discuss whether a Discernment Snapshot fits your situation.</p>
+        <a href="/contact" class="btn btn-primary">Get in touch</a>
       </div>
-
-      <div class="reg-grid mt-xl">
-        <article class="reg-card">
-          <h3>EU AI Act Article 14</h3>
-          <p>Requires humans to "correctly interpret" AI output and decide when to override. The Snapshot measures whether they can.</p>
-        </article>
-        <article class="reg-card">
-          <h3>EU AI Act Article 4</h3>
-          <p>Mandates AI literacy. The Snapshot goes further: not just knowledge, but demonstrated discernment under pressure.</p>
-        </article>
-        <article class="reg-card">
-          <h3>Dutch FRAIA</h3>
-          <p>Impact assessments identify risks. The Snapshot tests whether the humans doing oversight have the capacity to see them in practice.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section cta-section">
-    <div class="container text-center">
-      <h2>Ready to find out where you stand?</h2>
-      <p class="mt-md">One decision context. One focused assessment. Actionable output.</p>
-      <a href="/contact" class="btn btn-primary mt-lg">Request a Snapshot</a>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .hero-small {
-    padding: var(--space-xl) 0;
-    border-bottom: 1px solid var(--color-border);
+  /* Hero */
+  .hero {
+    padding: var(--space-2xl) 0 var(--space-xl);
   }
 
-  .hero-small h1 {
-    font-size: 2.5rem;
-    margin-bottom: var(--space-sm);
+  .hero-content {
+    max-width: 800px;
   }
 
-  .hero-small p {
-    font-size: 1.125rem;
+  .hero h1 {
+    font-size: var(--font-size-display);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-lg);
   }
 
-  .service-intro {
+  .hero-description {
+    font-size: var(--font-size-xl);
+    line-height: 1.6;
+  }
+
+  /* Product Grid */
+  .product-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: var(--space-xl);
     align-items: start;
   }
 
-  .service-content h2 {
+  .product-tag {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+  }
+
+  .product-content h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .product-content p {
+    margin-bottom: var(--space-md);
+  }
+
+  .product-content .btn {
+    margin-top: var(--space-sm);
+  }
+
+  .product-specs {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-lg);
+  }
+
+  .spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .spec-item:last-child {
+    border-bottom: none;
+  }
+
+  .spec-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+
+  .spec-value {
+    font-size: var(--font-size-sm);
     color: var(--color-text);
+    font-weight: 500;
   }
 
-  .service-content p {
-    font-size: 1.0625rem;
-    line-height: 1.7;
+  /* Section styles */
+  .section-title {
+    margin-bottom: var(--space-xs);
   }
 
-  .service-content .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-sm);
+  .section-subtitle {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-xl);
+    max-width: 600px;
   }
 
-  .service-specs {
+  .section-alt {
+    background: var(--color-bg-secondary);
+  }
+
+  /* Assess Grid */
+  .assess-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
   }
 
-  .spec-card {
-    background: var(--color-bg-secondary);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
+  .assess-card {
     padding: var(--space-lg);
-    text-align: center;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
   }
 
-  .spec-label {
-    font-size: 0.75rem;
-    color: var(--color-text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  .assess-card h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-sm);
+  }
+
+  .assess-card p {
+    font-size: var(--font-size-sm);
+    margin: 0;
+  }
+
+  /* Context Grid */
+  .context-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+
+  .context-content h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .context-content p {
+    margin-bottom: var(--space-md);
+  }
+
+  .context-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .context-card {
+    padding: var(--space-md);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+  }
+
+  .context-card h4 {
+    font-size: var(--font-size-base);
     margin-bottom: var(--space-xs);
   }
 
-  .spec-value {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--color-text);
+  .context-card p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin: 0;
   }
 
-  .process-section {
-    background: var(--color-bg-secondary);
-  }
-
-  .process-steps {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .step {
-    flex: 1;
+  /* CTA */
+  .section-cta {
     text-align: center;
-    max-width: 220px;
-  }
-
-  .step-number {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-accent);
-    color: white;
-    font-weight: 600;
-    border-radius: 50%;
-    margin: 0 auto var(--space-md);
-  }
-
-  .step h3 {
-    color: var(--color-text);
-    margin-bottom: var(--space-sm);
-  }
-
-  .step p {
-    font-size: 0.875rem;
-    line-height: 1.5;
-  }
-
-  .step-connector {
-    flex: 0.5;
-    height: 2px;
-    background: var(--color-border);
-    margin-top: 24px;
-    max-width: 60px;
-  }
-
-  .deliverables-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-  }
-
-  .deliverable-card {
-    background: var(--color-bg-secondary);
-    border: 1px solid var(--color-border);
-    border-radius: 16px;
-    padding: var(--space-xl);
-  }
-
-  .deliverable-icon {
-    color: var(--color-accent);
-    margin-bottom: var(--space-md);
-  }
-
-  .deliverable-card h3 {
-    color: var(--color-text);
-    margin-bottom: var(--space-md);
-  }
-
-  .deliverable-list {
-    list-style: none;
-  }
-
-  .deliverable-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: var(--space-sm);
-    font-size: 0.875rem;
-  }
-
-  .deliverable-list li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--color-accent);
-  }
-
-  .onramp-section {
-    background: var(--color-bg-secondary);
-  }
-
-  .onramp-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--space-xl);
-  }
-
-  .onramp-content {
-    max-width: 600px;
-  }
-
-  .onramp-content h2 {
-    color: var(--color-text);
-  }
-
-  .onramp-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .reg-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
-  }
-
-  .reg-card {
-    padding: var(--space-lg);
-    background: var(--color-bg-secondary);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-  }
-
-  .reg-card h3 {
-    color: var(--color-text);
-    font-size: 1rem;
-    margin-bottom: var(--space-sm);
-  }
-
-  .reg-card p {
-    font-size: 0.875rem;
-  }
-
-  .cta-section {
     border-top: 1px solid var(--color-border);
   }
 
-  @media (max-width: 1024px) {
-    .process-steps {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: var(--space-lg);
-    }
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
-    .step-connector {
-      display: none;
+  .cta-content h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-content p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-lg);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .assess-grid {
+      gap: var(--space-sm);
     }
   }
 
   @media (max-width: 768px) {
-    .service-intro {
+    .product-grid {
       grid-template-columns: 1fr;
     }
 
-    .deliverables-grid {
+    .assess-grid {
       grid-template-columns: 1fr;
     }
 
-    .onramp-grid {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .reg-grid {
+    .context-grid {
       grid-template-columns: 1fr;
-    }
-
-    .process-steps {
-      flex-direction: column;
-      align-items: center;
     }
   }
 </style>

@@ -2,352 +2,308 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About" description="SiRelations launches Superintelligence Relations as a new discipline — measuring and strengthening human discernment in collaboration with AI systems.">
-  <section class="hero-small">
+<BaseLayout title="Company" description="SiRelations is an AI safety and research organization. We study how humans can maintain meaningful oversight when working with advanced AI systems.">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
-      <h1>About SiRelations</h1>
-      <p>A new discipline for a new reality</p>
+      <div class="hero-content">
+        <h1>Making AI oversight you can rely on</h1>
+        <p class="hero-description">
+          SiRelations is an AI safety and research organization working to build reliable methods for human oversight of AI systems. We believe that as AI grows more capable, maintaining meaningful human agency becomes both more important and more difficult.
+        </p>
+        <a href="/contact" class="btn btn-primary">Contact us</a>
+      </div>
     </div>
   </section>
 
+  <!-- Purpose Section -->
   <section class="section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-content">
-          <h2>What we see</h2>
-          <p class="mt-md">
-            We no longer live in a world where AI is a tool you pick up when convenient.
-            We live in a world where AI systems are direct collaboration partners —
-            often the most knowledgeable voice in the room.
-          </p>
-          <p class="mt-md">
-            AI experts analyse at beyond-PhD level. Personal assistants know your thinking
-            patterns better than you know yourself. Agentic teams don't just advise — they execute.
-            Embedded systems determine what information you see before you start thinking.
-          </p>
-          <p class="mt-md">
-            The question isn't whether AI influences human decision-making.
-            It already does, on all four layers. The question is whether people develop
-            the capacity to remain clear in that reality.
-          </p>
-          <p class="mt-md">
-            That capacity is <strong>discernment</strong>: the ability to see what's happening
-            in the interaction — even when the system you're working with is more knowledgeable than you,
-            knows you better than you know yourself, and can persuade in ways you don't notice.
-          </p>
+      <div class="purpose-grid">
+        <div class="purpose-item">
+          <h3>Research-first approach</h3>
+          <p>We treat human oversight as a systematic science, not an assumption. Our work develops empirical methods to measure whether humans can actually exercise oversight — not just whether they're nominally "in the loop."</p>
         </div>
-        <div class="about-visual">
-          <div class="value-cards" role="list">
-            <article class="value-card" role="listitem">
-              <div class="value-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-              </div>
-              <h3>See</h3>
-              <p>Recognise influence patterns as they happen</p>
-            </article>
-            <article class="value-card" role="listitem">
-              <div class="value-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-              </div>
-              <h3>Weigh</h3>
-              <p>Know your own reactive patterns under pressure</p>
-            </article>
-            <article class="value-card" role="listitem">
-              <div class="value-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <h3>Decide</h3>
-              <p>Take responsibility for choices shaped by AI</p>
-            </article>
-            <article class="value-card" role="listitem">
-              <div class="value-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-              </div>
-              <h3>Check</h3>
-              <p>Apply concrete practices that restore steering</p>
-            </article>
-          </div>
+        <div class="purpose-item">
+          <h3>Practical application</h3>
+          <p>We translate foundational research into tools that organizations can use. Regulatory frameworks mandate oversight, but provide no methods to assess it. We're building those methods.</p>
+        </div>
+        <div class="purpose-item">
+          <h3>Policy engagement</h3>
+          <p>We work with policymakers to communicate what our research reveals about the gap between oversight requirements and oversight capabilities.</p>
+        </div>
+        <div class="purpose-item">
+          <h3>Long-term orientation</h3>
+          <p>We're preparing for a world where humans regularly collaborate with systems that exceed human capabilities. The measurement methods we develop today will become essential infrastructure.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section founder-section">
+  <!-- Research Areas -->
+  <section class="section section-alt">
     <div class="container">
-      <div class="founder-grid">
-        <div class="founder-content">
-          <h2>Our approach</h2>
-          <p class="mt-md">
-            SiRelations combines three disciplines that rarely come together.
+      <h2 class="section-title">Our work</h2>
+      <p class="section-subtitle">We focus on three interconnected areas that together address the oversight challenge.</p>
+
+      <div class="work-areas">
+        <article class="work-area">
+          <h3>Research</h3>
+          <p>
+            Foundational investigation into how humans can maintain agency when working with advanced AI. We study discernment — the capacity to remain clear, responsible, and sovereign in AI collaboration. Our research identifies the cognitive and contextual factors that enable or undermine human judgment.
           </p>
-          <p class="mt-md">
-            <strong>Deep understanding of human influence dynamics.</strong>
-            Over twenty years of experience working with people and groups in complex situations —
-            across therapy, facilitation, and organisational advisory. The core insight:
-            people don't change through information. They change through awareness of patterns in the moment.
+        </article>
+
+        <article class="work-area">
+          <h3>Measurement</h3>
+          <p>
+            Developing empirical methods to assess oversight capacity. Current regulatory frameworks assume humans can "correctly interpret" AI output and decide when to override — but provide no way to verify this. We build the assessment tools that make oversight measurable.
           </p>
-          <p class="mt-md">
-            <strong>Building capacity in AI systems.</strong>
-            Not just talking about AI — working with it. Developing and testing prototype
-            chains. Understanding how agentic workflows function from the inside.
+        </article>
+
+        <article class="work-area">
+          <h3>Policy</h3>
+          <p>
+            Translating research findings into actionable guidance for organizations and policymakers. The EU AI Act's Article 14 requires human oversight. Impact assessment frameworks identify risks. Our work addresses what these frameworks leave open: whether designated overseers can actually do the job.
           </p>
-          <p class="mt-md">
-            <strong>Systems thinking at civilisation scale.</strong>
-            Work spanning social movements, consciousness development projects,
-            and frameworks for human evolution in relation to technology.
-            Superintelligence Relations isn't just B2B services — it's preparation
-            for a world where we structurally collaborate with systems that surpass us.
-          </p>
-        </div>
-        <aside class="founder-aside">
-          <div class="constraint-card">
-            <h3>Constraint as discipline</h3>
-            <p>
-              We operate with intentional constraints on capacity.
-              This sounds like a limitation. It's also a gift.
-            </p>
-            <p class="mt-md">
-              It forces radical precision about what gets delivered and how.
-              No open-ended engagements. No volume dependency. No vague advice.
-              Instead: bounded products with fixed output that can be reliably delivered.
-            </p>
-            <p class="mt-md">
-              That discipline is exactly what this field needs. Superintelligence Relations
-              shouldn't become another consultancy container where everything fits.
-              It must be a measurable, repeatable intervention.
-            </p>
-          </div>
-        </aside>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section mission-section">
-    <div class="container">
-      <div class="mission-content text-center">
-        <h2>Mission</h2>
-        <p class="mission-statement mt-lg">
-          Develop the human capacity to remain clear, responsible, and sovereign
-          in collaboration with systems that can surpass us cognitively.
-        </p>
-      </div>
-    </div>
-  </section>
-
+  <!-- Values Section -->
   <section class="section">
     <div class="container">
-      <div class="text-center">
-        <h2>Why this matters beyond business</h2>
-        <p class="mt-md max-width-prose mx-auto">
-          International cooperation for sustainable development requires trust,
-          shared reality-formation, and decision quality across borders.
-          AI influence affects all three.
-        </p>
-      </div>
+      <h2 class="section-title">Our values</h2>
 
-      <div class="location-features mt-xl" role="list">
-        <article class="location-feature" role="listitem">
-          <h3>Shared decisions</h3>
-          <p>When international partners each consult their own AI experts, systematic biases can lead to diverging reality-pictures — even with the same data.</p>
+      <div class="values-list">
+        <article class="value-item">
+          <span class="value-number">1</span>
+          <div class="value-content">
+            <h3>Rigorous honesty</h3>
+            <p>We report what we find, even when the findings are uncomfortable. If oversight isn't working, we say so.</p>
+          </div>
         </article>
-        <article class="location-feature" role="listitem">
-          <h3>Trust erosion</h3>
-          <p>If it's not transparent how AI systems shaped positions, it becomes harder to trust each other's stances as authentically human.</p>
+
+        <article class="value-item">
+          <span class="value-number">2</span>
+          <div class="value-content">
+            <h3>Measurement over assertion</h3>
+            <p>Claims about human oversight should be empirically testable. We build the methods that make them so.</p>
+          </div>
         </article>
-        <article class="location-feature" role="listitem">
-          <h3>Cognitive sovereignty</h3>
-          <p>Countries and organisations without capacity to recognise AI influence become dependent on those who supply the systems.</p>
+
+        <article class="value-item">
+          <span class="value-number">3</span>
+          <div class="value-content">
+            <h3>Bounded scope</h3>
+            <p>We deliver specific, measurable products — not open-ended consulting. Constraints create precision.</p>
+          </div>
+        </article>
+
+        <article class="value-item">
+          <span class="value-number">4</span>
+          <div class="value-content">
+            <h3>Long-term thinking</h3>
+            <p>We're building for a future where human-AI collaboration is the norm, not the exception.</p>
+          </div>
+        </article>
+
+        <article class="value-item">
+          <span class="value-number">5</span>
+          <div class="value-content">
+            <h3>Public benefit</h3>
+            <p>The challenge of human oversight affects everyone. Our research contributes to the broader ecosystem.</p>
+          </div>
         </article>
       </div>
+    </div>
+  </section>
 
-      <div class="text-center mt-xl">
-        <p class="highlight-text">
-          Superintelligence Relations is also an international cooperation question:
-          how do we keep human responsibility and defensible choices intact
-          in a world of cognitive asymmetry?
+  <!-- Mission Section -->
+  <section class="section section-mission">
+    <div class="container">
+      <div class="mission-content">
+        <h2>Our mission</h2>
+        <p class="mission-statement">
+          Develop the science and methods for meaningful human oversight of AI systems — ensuring that as AI grows more capable, humans retain genuine agency in the collaboration.
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section cta-section">
-    <div class="container text-center">
-      <h2>Start with one decision context</h2>
-      <p class="mt-md">The Discernment Snapshot measures where you stand — and what to do about it.</p>
-      <a href="/services" class="btn btn-primary mt-lg">See the product</a>
+  <!-- CTA Section -->
+  <section class="section section-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Work with us</h2>
+        <p>We partner with organizations preparing for AI governance requirements.</p>
+        <a href="/contact" class="btn btn-primary">Get in touch</a>
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .hero-small {
-    padding: var(--space-xl) 0;
-    border-bottom: 1px solid var(--color-border);
+  /* Hero */
+  .hero {
+    padding: var(--space-2xl) 0 var(--space-xl);
   }
 
-  .hero-small h1 {
-    font-size: 2.5rem;
-    margin-bottom: var(--space-sm);
+  .hero-content {
+    max-width: 800px;
   }
 
-  .hero-small p {
-    font-size: 1.125rem;
+  .hero h1 {
+    font-size: var(--font-size-display);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-lg);
   }
 
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-xl);
-    align-items: start;
+  .hero-description {
+    font-size: var(--font-size-xl);
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
   }
 
-  .about-content h2 {
-    color: var(--color-text);
-  }
-
-  .about-content p {
-    font-size: 1.0625rem;
-    line-height: 1.7;
-  }
-
-  .value-cards {
+  /* Purpose Grid */
+  .purpose-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-md);
+    gap: var(--space-xl) var(--space-lg);
   }
 
-  .value-card {
-    background: var(--color-bg-secondary);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    padding: var(--space-lg);
-    text-align: center;
-  }
-
-  .value-icon {
-    color: var(--color-accent);
+  .purpose-item h3 {
+    font-size: var(--font-size-xl);
     margin-bottom: var(--space-sm);
   }
 
-  .value-card h3 {
-    font-size: 1rem;
-    color: var(--color-text);
+  .purpose-item p {
+    font-size: var(--font-size-base);
+  }
+
+  /* Section styles */
+  .section-title {
     margin-bottom: var(--space-xs);
   }
 
-  .value-card p {
-    font-size: 0.75rem;
-    margin: 0 auto;
+  .section-subtitle {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-xl);
+    max-width: 600px;
   }
 
-  .founder-section {
+  .section-alt {
     background: var(--color-bg-secondary);
   }
 
-  .founder-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: var(--space-xl);
-    align-items: start;
-  }
-
-  .founder-content h2 {
-    color: var(--color-text);
-  }
-
-  .founder-content p {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .constraint-card {
-    background: var(--color-bg);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    padding: var(--space-lg);
-  }
-
-  .constraint-card h3 {
-    color: var(--color-text);
-    font-size: 1rem;
-    margin-bottom: var(--space-md);
-  }
-
-  .constraint-card p {
-    font-size: 0.875rem;
-    line-height: 1.6;
-  }
-
-  .mission-section {
-    background: var(--color-bg);
-  }
-
-  .mission-statement {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: var(--color-text);
-    max-width: 800px;
-    margin: var(--space-lg) auto 0;
-  }
-
-  .max-width-prose {
-    max-width: 700px;
-  }
-
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .highlight-text {
-    font-size: 1.125rem;
-    color: var(--color-text);
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  .location-features {
+  /* Work Areas */
+  .work-areas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-lg);
   }
 
-  .location-feature {
-    text-align: center;
+  .work-area {
     padding: var(--space-lg);
-    background: var(--color-bg-secondary);
+    background: var(--color-bg);
     border: 1px solid var(--color-border);
-    border-radius: 12px;
+    border-radius: 8px;
   }
 
-  .location-feature h3 {
-    font-size: 1.125rem;
+  .work-area h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .work-area p {
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+  }
+
+  /* Values */
+  .values-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 800px;
+  }
+
+  .value-item {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+  }
+
+  .value-number {
+    font-family: var(--font-display);
+    font-size: var(--font-size-2xl);
+    font-weight: 400;
+    color: var(--color-accent);
+    line-height: 1;
+    min-width: 2rem;
+  }
+
+  .value-content h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-xs);
+  }
+
+  .value-content p {
+    font-size: var(--font-size-base);
+  }
+
+  /* Mission */
+  .section-mission {
+    background: var(--color-bg-secondary);
+  }
+
+  .mission-content {
+    max-width: 800px;
+  }
+
+  .mission-content h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .mission-statement {
+    font-size: var(--font-size-2xl);
+    line-height: 1.5;
     color: var(--color-text);
-    margin-bottom: var(--space-sm);
   }
 
-  .location-feature p {
-    font-size: 0.875rem;
-  }
-
-  .cta-section {
+  /* CTA */
+  .section-cta {
+    text-align: center;
     border-top: 1px solid var(--color-border);
   }
 
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-content h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-content p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-lg);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .work-areas {
+      grid-template-columns: 1fr;
+    }
+  }
+
   @media (max-width: 768px) {
-    .about-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .founder-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .value-cards {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .location-features {
+    .purpose-grid {
       grid-template-columns: 1fr;
     }
   }

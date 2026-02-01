@@ -2,54 +2,43 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Contact" description="Request a Discernment Snapshot or ask about the On-ramp. We respond within 24 hours.">
-  <section class="hero-small">
+<BaseLayout title="Contact" description="Get in touch with SiRelations. We respond within 24 hours.">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
-      <h1>Get in touch</h1>
-      <p>Request a Snapshot, ask about On-ramp, or start a conversation</p>
+      <div class="hero-content">
+        <h1>Contact</h1>
+        <p class="hero-description">
+          Get in touch to discuss our research, services, or potential collaboration.
+        </p>
+      </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section class="section">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
-          <h2>How can we help?</h2>
-          <p class="mt-md">
-            Whether you're ready to request a Discernment Snapshot, curious about
-            the On-ramp option, or have questions about whether this applies to your
-            situation — let us know.
+          <h2>Get in touch</h2>
+          <p>
+            Whether you're interested in our assessment services, have questions about our research, or want to explore partnership opportunities — we'd be happy to hear from you.
           </p>
 
-          <div class="contact-methods mt-xl" role="list">
-            <div class="contact-method" role="listitem">
-              <div class="method-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div>
-                <h3>Email</h3>
-                <a href="mailto:yuri@sirelations.nl">yuri@sirelations.nl</a>
-              </div>
+          <div class="contact-details">
+            <div class="contact-item">
+              <h3>Email</h3>
+              <a href="mailto:yuri@sirelations.nl">yuri@sirelations.nl</a>
             </div>
 
-            <div class="contact-method" role="listitem">
-              <div class="method-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <h3>Location</h3>
-                <p>The Hague, Netherlands</p>
-              </div>
+            <div class="contact-item">
+              <h3>Location</h3>
+              <p>The Hague, Netherlands</p>
             </div>
 
-            <div class="contact-method" role="listitem">
-              <div class="method-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <h3>Response</h3>
-                <p>Within 24 hours</p>
-              </div>
+            <div class="contact-item">
+              <h3>Response time</h3>
+              <p>Within 24 hours</p>
             </div>
           </div>
         </div>
@@ -57,276 +46,141 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="contact-form-wrapper">
           <form class="contact-form" action="#" method="POST" novalidate>
             <div class="form-group">
-              <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
-              <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
             </div>
 
             <div class="form-group">
-              <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
-              <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
             </div>
 
             <div class="form-group">
-              <label for="org">Organisation (optional)</label>
-              <input type="text" id="org" name="org" placeholder="Your organisation" autocomplete="organization">
+              <label for="org">Organization (optional)</label>
+              <input type="text" id="org" name="org" autocomplete="organization">
             </div>
 
             <div class="form-group">
-              <label for="interest">I'm interested in</label>
-              <select id="interest" name="interest">
-                <option value="">Select an option</option>
-                <option value="snapshot">Discernment Snapshot (€450)</option>
-                <option value="onramp">On-ramp (€100)</option>
-                <option value="partner">Partnership / subcontracting</option>
-                <option value="other">Just a conversation</option>
-              </select>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
             </div>
 
-            <div class="form-group">
-              <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
-              <textarea id="message" name="message" rows="4" required placeholder="Briefly describe your situation or question..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-full">Send message</button>
-
-            <p class="form-note mt-md">
-              Response within 24 hours. Information kept confidential.
-              See our <a href="/privacy">privacy policy</a>.
-            </p>
+            <button type="submit" class="btn btn-primary">Send message</button>
           </form>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section faq-section">
-    <div class="container">
-      <div class="text-center">
-        <h2>Common questions</h2>
-      </div>
-
-      <div class="faq-grid mt-xl">
-        <article class="faq-item">
-          <h3>Who is the Snapshot for?</h3>
-          <p>
-            Decision-makers and teams where AI systems play a role —
-            as AI advisors, assistants, agentic workflows, or embedded infrastructure.
-            Typically 1-4 people participate per Snapshot.
-          </p>
-        </article>
-
-        <article class="faq-item">
-          <h3>What's the difference between Snapshot and On-ramp?</h3>
-          <p>
-            The Snapshot (€450) is a full assessment: 72 hours, 3-5 page memo + checklist.
-            The On-ramp (€100) is lighter: 48 hours, 1-page mini-memo with 3 observations + 3 actions.
-            Use On-ramp if you're not sure the Snapshot is right for you.
-          </p>
-        </article>
-
-        <article class="faq-item">
-          <h3>What decision context can I bring?</h3>
-          <p>
-            Any bounded situation where AI systems influence decisions: strategic planning
-            with AI advisors, team workflows using AI assistants, processes with agentic
-            automation, or contexts shaped by AI-driven recommendations or rankings.
-          </p>
-        </article>
-
-        <article class="faq-item">
-          <h3>How is data handled?</h3>
-          <p>
-            We work with minimal data collection, local processing where possible,
-            and GDPR-compliant practices. The Snapshot output is your property.
-            We don't retain client data beyond what's needed for delivery.
-          </p>
-        </article>
-
-        <article class="faq-item">
-          <h3>Can partners offer this to their clients?</h3>
-          <p>
-            Yes. Consultancies, governance advisors, and AI service providers can
-            integrate the Snapshot into their offerings. Contact us about partnership
-            arrangements and subcontracting.
-          </p>
-        </article>
-
-        <article class="faq-item">
-          <h3>What if I just want to learn more first?</h3>
-          <p>
-            Use the contact form to start a conversation. No commitment required.
-            We'll help you determine whether this is the right step for your situation.
-          </p>
-        </article>
       </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .hero-small {
+  /* Hero */
+  .hero {
     padding: var(--space-xl) 0;
-    border-bottom: 1px solid var(--color-border);
   }
 
-  .hero-small h1 {
-    font-size: 2.5rem;
-    margin-bottom: var(--space-sm);
+  .hero-content {
+    max-width: 600px;
   }
 
-  .hero-small p {
-    font-size: 1.125rem;
+  .hero h1 {
+    font-size: var(--font-size-display);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-md);
   }
 
+  .hero-description {
+    font-size: var(--font-size-xl);
+    line-height: 1.6;
+  }
+
+  /* Contact Grid */
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-2xl);
+    gap: var(--space-xl);
+    align-items: start;
   }
 
   .contact-info h2 {
-    color: var(--color-text);
+    margin-bottom: var(--space-md);
   }
 
-  .contact-methods {
+  .contact-info > p {
+    margin-bottom: var(--space-xl);
+  }
+
+  .contact-details {
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
   }
 
-  .contact-method {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-md);
-  }
-
-  .method-icon {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-bg-elevated);
-    border-radius: 12px;
-    color: var(--color-accent);
-    flex-shrink: 0;
-  }
-
-  .contact-method h3 {
-    font-size: 1rem;
-    color: var(--color-text);
+  .contact-item h3 {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-weight: 500;
     margin-bottom: var(--space-xs);
   }
 
-  .contact-method p,
-  .contact-method a {
-    font-size: 0.875rem;
+  .contact-item p,
+  .contact-item a {
+    font-size: var(--font-size-base);
+    color: var(--color-text);
   }
 
+  .contact-item a {
+    text-decoration: underline;
+  }
+
+  /* Form */
   .contact-form-wrapper {
     background: var(--color-bg-secondary);
     border: 1px solid var(--color-border);
-    border-radius: 16px;
-    padding: var(--space-xl);
+    border-radius: 8px;
+    padding: var(--space-lg);
   }
 
   .form-group {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
   }
 
   .form-group label {
     display: block;
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     font-weight: 500;
     color: var(--color-text);
-    margin-bottom: var(--space-sm);
-  }
-
-  .required {
-    color: var(--color-accent);
+    margin-bottom: var(--space-xs);
   }
 
   .form-group input,
-  .form-group textarea,
-  .form-group select {
+  .form-group textarea {
     width: 100%;
     padding: 0.75rem 1rem;
     background: var(--color-bg);
     border: 1px solid var(--color-border);
-    border-radius: 8px;
+    border-radius: 4px;
     color: var(--color-text);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-family: inherit;
     transition: border-color 0.2s;
   }
 
-  .form-group select {
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none' stroke='%23888' stroke-width='2'%3E%3Cpath d='M3 4.5l3 3 3-3'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 1rem center;
-    padding-right: 2.5rem;
-  }
-
   .form-group input:focus,
-  .form-group textarea:focus,
-  .form-group select:focus {
+  .form-group textarea:focus {
     outline: none;
     border-color: var(--color-accent);
   }
 
-  .form-group input::placeholder,
-  .form-group textarea::placeholder {
-    color: var(--color-text-muted);
-  }
-
-  .btn-full {
+  .contact-form .btn {
     width: 100%;
+    margin-top: var(--space-sm);
   }
 
-  .form-note {
-    font-size: 0.75rem;
-    text-align: center;
-  }
-
-  .form-note a {
-    color: var(--color-accent-light);
-  }
-
-  .faq-section {
-    background: var(--color-bg-secondary);
-  }
-
-  .faq-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-  }
-
-  .faq-item {
-    padding: var(--space-lg);
-    background: var(--color-bg);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-  }
-
-  .faq-item h3 {
-    font-size: 1rem;
-    color: var(--color-text);
-    margin-bottom: var(--space-sm);
-  }
-
-  .faq-item p {
-    font-size: 0.875rem;
-  }
-
+  /* Responsive */
   @media (max-width: 768px) {
     .contact-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .faq-grid {
       grid-template-columns: 1fr;
     }
   }
