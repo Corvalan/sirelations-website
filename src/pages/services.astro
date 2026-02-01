@@ -2,31 +2,35 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Discernment Snapshot" description="A bounded assessment of human discernment in one decision context where superintelligent systems play a role. 72 hours. Memo + Checklist.">
+<BaseLayout title="Services" description="SiRelations offers the Discernment Snapshot — a bounded assessment of human oversight capacity in AI-influenced decision contexts. 72 hours. Actionable output.">
   <section class="hero-small">
     <div class="container">
-      <h1>The Discernment Snapshot</h1>
-      <p>Measure where you stand. Know what to do about it.</p>
+      <h1>Services</h1>
+      <p>Measuring human oversight capacity</p>
     </div>
   </section>
 
-  <!-- Main Product -->
+  <!-- Primary Service -->
   <section class="section">
     <div class="container">
-      <div class="product-intro">
-        <div class="product-content">
-          <h2>What it is</h2>
+      <div class="service-intro">
+        <div class="service-content">
+          <h2>The Discernment Snapshot</h2>
           <p class="mt-md">
             A bounded, decision-ready assessment of human discernment in one concrete
-            decision context where superintelligent systems play a role — as visible expert,
+            decision context where AI systems play a role — as visible expert,
             as agentic team, as embedded infrastructure, or as external influence.
           </p>
           <p class="mt-md">
             Not a generic AI audit. Not a compliance checklist. A focused measurement
             of whether the humans involved can actually steer.
           </p>
+          <a href="https://discernment.ai/services" class="btn btn-primary mt-lg" rel="noopener">
+            Full details at discernment.ai
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
         </div>
-        <div class="product-specs">
+        <div class="service-specs">
           <div class="spec-card">
             <div class="spec-label">Scope</div>
             <div class="spec-value">One decision context</div>
@@ -49,36 +53,36 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <!-- Process -->
-  <section class="section approach-section">
+  <section class="section process-section">
     <div class="container">
       <div class="text-center">
         <h2>How it works</h2>
       </div>
 
-      <div class="approach-steps mt-xl">
-        <div class="step">
-          <div class="step-number">1</div>
+      <div class="process-steps mt-xl" role="list">
+        <article class="step" role="listitem">
+          <div class="step-number" aria-hidden="true">1</div>
           <h3>Intake</h3>
           <p>Async questionnaire about decision context, system influences, and friction points (~15 min)</p>
-        </div>
-        <div class="step-connector"></div>
-        <div class="step">
-          <div class="step-number">2</div>
+        </article>
+        <div class="step-connector" aria-hidden="true"></div>
+        <article class="step" role="listitem">
+          <div class="step-number" aria-hidden="true">2</div>
           <h3>Session</h3>
-          <p>Structured online analysis of how decision-making operates under superintelligent pressure, including mini-simulation (45-60 min)</p>
-        </div>
-        <div class="step-connector"></div>
-        <div class="step">
-          <div class="step-number">3</div>
+          <p>Structured online analysis of how decision-making operates under AI influence, including mini-simulation (45-60 min)</p>
+        </article>
+        <div class="step-connector" aria-hidden="true"></div>
+        <article class="step" role="listitem">
+          <div class="step-number" aria-hidden="true">3</div>
           <h3>Demo</h3>
-          <p>Live demonstration of the Discernment.ai measurement chain — proof that the method is concrete and reproducible (10-15 min)</p>
-        </div>
-        <div class="step-connector"></div>
-        <div class="step">
-          <div class="step-number">4</div>
+          <p>Live demonstration of the measurement chain — proof that the method is concrete and reproducible (10-15 min)</p>
+        </article>
+        <div class="step-connector" aria-hidden="true"></div>
+        <article class="step" role="listitem">
+          <div class="step-number" aria-hidden="true">4</div>
           <h3>Output</h3>
           <p>Written deliverables within 72 hours: Memo (3-5 pages) + Checklist (1 page)</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -91,94 +95,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <div class="deliverables-grid mt-xl">
-        <div class="deliverable-card">
-          <div class="deliverable-icon">📄</div>
+        <article class="deliverable-card">
+          <div class="deliverable-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
           <h3>Memo (3-5 pages)</h3>
-          <ul class="deliverable-list">
+          <ul class="deliverable-list" role="list">
             <li>Patterns identified in the decision context</li>
             <li>Vulnerabilities where AI influence is unnoticed</li>
             <li>Decision bottlenecks where responsibility diffuses</li>
             <li>Development opportunities for strengthening discernment</li>
             <li>Explicit assumptions and scope boundaries</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="deliverable-card">
-          <div class="deliverable-icon">✅</div>
+        <article class="deliverable-card">
+          <div class="deliverable-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
           <h3>Checklist (1 page)</h3>
-          <ul class="deliverable-list">
+          <ul class="deliverable-list" role="list">
             <li>Concrete discernment checks for immediate use</li>
             <li>Decision agreements for the team</li>
             <li>When to pause and verify</li>
             <li>What to document and why</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Not Included -->
-  <section class="section not-section">
-    <div class="container">
-      <div class="text-center">
-        <h2>What this is not</h2>
-        <p class="mt-md">Clarity about boundaries is part of the discipline.</p>
-      </div>
-
-      <div class="not-grid mt-xl">
-        <div class="not-item">
-          <span class="not-icon">✗</span>
-          <div>
-            <h3>Not an implementation project</h3>
-            <p>We measure and advise. We don't redesign your processes.</p>
-          </div>
-        </div>
-        <div class="not-item">
-          <span class="not-icon">✗</span>
-          <div>
-            <h3>Not a legal audit</h3>
-            <p>We assess human capacity, not legal compliance. The two are related but distinct.</p>
-          </div>
-        </div>
-        <div class="not-item">
-          <span class="not-icon">✗</span>
-          <div>
-            <h3>Not a certification</h3>
-            <p>The Snapshot is a measurement artifact, not a stamp of approval.</p>
-          </div>
-        </div>
-        <div class="not-item">
-          <span class="not-icon">✗</span>
-          <div>
-            <h3>Not generic AI training</h3>
-            <p>We don't teach "AI literacy" in general. We measure discernment in your specific context.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Regulatory Fit -->
-  <section class="section">
-    <div class="container">
-      <div class="text-center">
-        <h2>Regulatory alignment</h2>
-        <p class="mt-md">The Snapshot supports compliance — but from human capacity, not checkbox completion.</p>
-      </div>
-
-      <div class="reg-fit-grid mt-xl">
-        <div class="reg-fit-card">
-          <h3>EU AI Act Article 14</h3>
-          <p>Requires humans to "correctly interpret" AI output and decide when to override. The Snapshot measures whether they can.</p>
-        </div>
-        <div class="reg-fit-card">
-          <h3>EU AI Act Article 4</h3>
-          <p>Mandates AI literacy. The Snapshot goes further: not just knowledge, but demonstrated discernment under pressure.</p>
-        </div>
-        <div class="reg-fit-card">
-          <h3>Dutch FRAIA</h3>
-          <p>Impact assessments identify risks. The Snapshot tests whether the humans doing oversight have the capacity to see them in practice.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -204,6 +146,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <!-- Regulatory Alignment -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2>Regulatory alignment</h2>
+        <p class="mt-md">The Snapshot supports compliance — but from human capacity, not checkbox completion.</p>
+      </div>
+
+      <div class="reg-grid mt-xl">
+        <article class="reg-card">
+          <h3>EU AI Act Article 14</h3>
+          <p>Requires humans to "correctly interpret" AI output and decide when to override. The Snapshot measures whether they can.</p>
+        </article>
+        <article class="reg-card">
+          <h3>EU AI Act Article 4</h3>
+          <p>Mandates AI literacy. The Snapshot goes further: not just knowledge, but demonstrated discernment under pressure.</p>
+        </article>
+        <article class="reg-card">
+          <h3>Dutch FRAIA</h3>
+          <p>Impact assessments identify risks. The Snapshot tests whether the humans doing oversight have the capacity to see them in practice.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <section class="section cta-section">
     <div class="container text-center">
       <h2>Ready to find out where you stand?</h2>
@@ -228,23 +196,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-size: 1.125rem;
   }
 
-  .product-intro {
+  .service-intro {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: var(--space-xl);
     align-items: start;
   }
 
-  .product-content h2 {
+  .service-content h2 {
     color: var(--color-text);
   }
 
-  .product-content p {
+  .service-content p {
     font-size: 1.0625rem;
     line-height: 1.7;
   }
 
-  .product-specs {
+  .service-content .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .service-specs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
@@ -272,11 +246,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     color: var(--color-text);
   }
 
-  .approach-section {
+  .process-section {
     background: var(--color-bg-secondary);
   }
 
-  .approach-steps {
+  .process-steps {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -333,7 +307,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .deliverable-icon {
-    font-size: 2.5rem;
+    color: var(--color-accent);
     margin-bottom: var(--space-md);
   }
 
@@ -360,62 +334,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     color: var(--color-accent);
   }
 
-  .not-section {
-    background: var(--color-bg-secondary);
-  }
-
-  .not-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-  }
-
-  .not-item {
-    display: flex;
-    gap: var(--space-md);
-    align-items: flex-start;
-  }
-
-  .not-icon {
-    color: var(--color-text-muted);
-    font-size: 1.25rem;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
-
-  .not-item h3 {
-    color: var(--color-text);
-    font-size: 1rem;
-    margin-bottom: var(--space-xs);
-  }
-
-  .not-item p {
-    font-size: 0.875rem;
-  }
-
-  .reg-fit-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
-  }
-
-  .reg-fit-card {
-    padding: var(--space-lg);
-    background: var(--color-bg-secondary);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-  }
-
-  .reg-fit-card h3 {
-    color: var(--color-text);
-    font-size: 1rem;
-    margin-bottom: var(--space-sm);
-  }
-
-  .reg-fit-card p {
-    font-size: 0.875rem;
-  }
-
   .onramp-section {
     background: var(--color-bg-secondary);
   }
@@ -440,12 +358,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     line-height: 1.6;
   }
 
+  .reg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .reg-card {
+    padding: var(--space-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+  }
+
+  .reg-card h3 {
+    color: var(--color-text);
+    font-size: 1rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .reg-card p {
+    font-size: 0.875rem;
+  }
+
   .cta-section {
     border-top: 1px solid var(--color-border);
   }
 
   @media (max-width: 1024px) {
-    .approach-steps {
+    .process-steps {
       flex-wrap: wrap;
       justify-content: center;
       gap: var(--space-lg);
@@ -457,19 +398,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   @media (max-width: 768px) {
-    .product-intro {
+    .service-intro {
       grid-template-columns: 1fr;
     }
 
     .deliverables-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .not-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .reg-fit-grid {
       grid-template-columns: 1fr;
     }
 
@@ -478,7 +411,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       text-align: center;
     }
 
-    .approach-steps {
+    .reg-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .process-steps {
       flex-direction: column;
       align-items: center;
     }

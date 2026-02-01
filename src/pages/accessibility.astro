@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Accessibility Statement" description="Our commitment to digital accessibility. This website aims to meet WCAG 2.1 Level AA standards.">
+  <section class="hero-small">
+    <div class="container">
+      <h1>Accessibility Statement</h1>
+      <p>Last updated: February 2026</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <article class="legal-content">
+        <h2>Our commitment</h2>
+        <p>
+          SiRelations is committed to ensuring digital accessibility for people with disabilities.
+          We are continually improving the user experience for everyone and applying the relevant
+          accessibility standards.
+        </p>
+
+        <h2>Standards</h2>
+        <p>
+          This website aims to conform to the Web Content Accessibility Guidelines (WCAG) 2.1
+          Level AA. These guidelines explain how to make web content more accessible for people
+          with disabilities and more user-friendly for everyone.
+        </p>
+        <p>
+          As a service operating in the Netherlands and serving EU clients, we also follow:
+        </p>
+        <ul>
+          <li><strong>EN 301 549:</strong> The European standard for digital accessibility</li>
+          <li><strong>Digitoegankelijk:</strong> Dutch government accessibility requirements</li>
+          <li><strong>European Accessibility Act:</strong> Applicable requirements effective June 2025</li>
+        </ul>
+
+        <h2>Measures we take</h2>
+        <p>We have taken the following measures to ensure accessibility:</p>
+        <ul>
+          <li>Include accessibility as a requirement in our design and development process</li>
+          <li>Use semantic HTML to ensure content structure is clear</li>
+          <li>Provide sufficient colour contrast for text and interactive elements</li>
+          <li>Ensure all functionality is accessible via keyboard</li>
+          <li>Provide skip navigation links for screen reader users</li>
+          <li>Include text alternatives for non-text content</li>
+          <li>Ensure forms have proper labels and error messages</li>
+          <li>Support browser zoom up to 200% without loss of content</li>
+          <li>Provide visible focus indicators for interactive elements</li>
+          <li>Avoid content that flashes more than three times per second</li>
+        </ul>
+
+        <h2>Conformance status</h2>
+        <p>
+          We believe this website is partially conformant with WCAG 2.1 Level AA.
+          "Partially conformant" means that some parts of the content may not fully
+          conform to the accessibility standard.
+        </p>
+
+        <h2>Known limitations</h2>
+        <p>
+          Despite our efforts, some content may have accessibility limitations.
+          Known issues include:
+        </p>
+        <ul>
+          <li>
+            <strong>Contact form:</strong> The form does not yet provide comprehensive
+            error messages for all validation states. We are working to improve this.
+          </li>
+          <li>
+            <strong>Third-party content:</strong> Some embedded content from third parties
+            may not meet accessibility standards. Where possible, we provide accessible
+            alternatives.
+          </li>
+        </ul>
+        <p>
+          We are actively working to address these issues and welcome feedback on
+          accessibility barriers you encounter.
+        </p>
+
+        <h2>Feedback</h2>
+        <p>
+          We welcome your feedback on the accessibility of this website.
+          Please let us know if you encounter accessibility barriers:
+        </p>
+        <ul>
+          <li>Email: <a href="mailto:accessibility@sirelations.nl">accessibility@sirelations.nl</a></li>
+          <li>Contact form: <a href="/contact">sirelations.ai/contact</a></li>
+        </ul>
+        <p>
+          We aim to respond to accessibility feedback within 5 business days.
+        </p>
+
+        <h2>Compatibility</h2>
+        <p>This website is designed to be compatible with:</p>
+        <ul>
+          <li>Recent versions of major browsers (Chrome, Firefox, Safari, Edge)</li>
+          <li>Screen readers including NVDA, JAWS, and VoiceOver</li>
+          <li>Browser zoom functionality up to 200%</li>
+          <li>High contrast modes and custom colour schemes</li>
+        </ul>
+        <p>
+          The website may not display correctly in Internet Explorer 11 and earlier versions.
+        </p>
+
+        <h2>Technical specifications</h2>
+        <p>
+          Accessibility of this website relies on the following technologies:
+        </p>
+        <ul>
+          <li>HTML5</li>
+          <li>WAI-ARIA</li>
+          <li>CSS</li>
+          <li>JavaScript (progressive enhancement)</li>
+        </ul>
+        <p>
+          These technologies are relied upon for conformance with the accessibility
+          standards used.
+        </p>
+
+        <h2>Assessment approach</h2>
+        <p>
+          We assess accessibility through:
+        </p>
+        <ul>
+          <li>Self-evaluation using automated testing tools</li>
+          <li>Manual testing with keyboard navigation</li>
+          <li>Testing with screen readers</li>
+          <li>Review against WCAG 2.1 success criteria</li>
+        </ul>
+
+        <h2>Enforcement</h2>
+        <p>
+          If you are not satisfied with our response to your feedback, you may
+          contact the Dutch national accessibility authority:
+        </p>
+        <address class="contact-block">
+          Logius - Digitoegankelijk<br>
+          <a href="https://www.digitoegankelijk.nl" target="_blank" rel="noopener">digitoegankelijk.nl</a>
+        </address>
+
+        <h2>Updates</h2>
+        <p>
+          This statement was last updated in February 2026. We review and update
+          this statement regularly, particularly when significant changes are made
+          to the website.
+        </p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-small {
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .hero-small h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .hero-small p {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+  }
+
+  .legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .legal-content h2 {
+    color: var(--color-text);
+    font-size: 1.5rem;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .legal-content h2:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .legal-content p {
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
+  }
+
+  .legal-content ul {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-lg);
+  }
+
+  .legal-content li {
+    margin-bottom: var(--space-sm);
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+  }
+
+  .legal-content a {
+    color: var(--color-accent-light);
+  }
+
+  .contact-block {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    margin: var(--space-md) 0;
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  .contact-block a {
+    color: var(--color-accent-light);
+  }
+</style>

@@ -2,13 +2,18 @@
 interface Props {
   title: string;
   description?: string;
+  lang?: string;
 }
 
-const { title, description = "SiRelations - AI Services & Consultancy" } = Astro.props;
+const {
+  title,
+  description = "SiRelations launches Superintelligence Relations as a new discipline — measuring and strengthening human discernment in collaboration with AI systems.",
+  lang = "en"
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,14 +23,23 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>{title} | SiRelations</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={`${title} | SiRelations`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SiRelations" />
   </head>
   <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="header">
-      <nav class="nav container">
+      <nav class="nav container" aria-label="Main navigation">
         <a href="/" class="logo">
           <span class="logo-text">SiRelations</span>
         </a>
-        <ul class="nav-links">
+        <ul class="nav-links" role="list">
           <li><a href="/">Home</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/about">About</a></li>
@@ -33,10 +47,10 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
         </ul>
         <div class="nav-actions">
           <button class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
-            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           </button>
-          <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -88,7 +102,7 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
       })();
     </script>
 
-    <main>
+    <main id="main-content">
       <slot />
     </main>
 
@@ -97,28 +111,36 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
         <div class="footer-content">
           <div class="footer-brand">
             <span class="logo-text">SiRelations</span>
-            <p>AI Services & Consultancy</p>
+            <p>Superintelligence Relations</p>
+            <div class="footer-legal-info mt-md">
+              <p><strong>Yuri Corvalan</strong></p>
+              <p>Prins Mauritslaan 98</p>
+              <p>2582LW Den Haag, Netherlands</p>
+              <p class="mt-sm">KVK: 82057133</p>
+              <p>BTW: NL003634983B28</p>
+            </div>
           </div>
           <div class="footer-links">
             <div class="footer-column">
-              <h4>Company</h4>
-              <ul>
+              <h4>Services</h4>
+              <ul role="list">
+                <li><a href="/services">Overview</a></li>
+                <li><a href="https://discernment.ai" rel="noopener">Discernment Snapshot</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/services">Services</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
             </div>
             <div class="footer-column">
               <h4>Legal</h4>
-              <ul>
-                <li><a href="/privacy">Privacy</a></li>
-                <li><a href="/terms">Terms</a></li>
+              <ul role="list">
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/accessibility">Accessibility</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} SiRelations. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Yuri Corvalan. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -130,6 +152,23 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
 </style>
 
 <style>
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    z-index: 1000;
+    text-decoration: none;
+  }
+
+  .skip-link:focus {
+    top: 10px;
+  }
+
   .header {
     position: fixed;
     top: 0;
@@ -153,6 +192,7 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+    text-decoration: none;
   }
 
   .logo-text {
@@ -173,6 +213,7 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
     font-size: 0.875rem;
     font-weight: 500;
     transition: color 0.2s;
+    text-decoration: none;
   }
 
   .nav-links a:hover {
@@ -209,7 +250,6 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
     border-color: var(--color-text-muted);
   }
 
-  /* Show sun icon in dark mode, moon icon in light mode */
   .theme-toggle .icon-sun {
     display: block;
   }
@@ -266,6 +306,15 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
     font-size: 0.875rem;
   }
 
+  .footer-legal-info {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .footer-legal-info p {
+    margin-bottom: 0.25rem;
+  }
+
   .footer-links {
     display: flex;
     gap: var(--space-xl);
@@ -289,6 +338,7 @@ const { title, description = "SiRelations - AI Services & Consultancy" } = Astro
   .footer-column a {
     color: var(--color-text-muted);
     font-size: 0.875rem;
+    text-decoration: none;
   }
 
   .footer-column a:hover {
