@@ -10,6 +10,12 @@ const {
   description = "SiRelations launches Superintelligence Relations as a new discipline — measuring and strengthening human discernment in collaboration with AI systems.",
   lang = "en"
 } = Astro.props;
+
+const currentPath = Astro.url.pathname;
+const isActive = (path: string) => {
+  if (path === '/') return currentPath === '/';
+  return currentPath.startsWith(path);
+};
 ---
 
 <!DOCTYPE html>
@@ -40,10 +46,10 @@ const {
           <span class="logo-text">SiRelations</span>
         </a>
         <ul class="nav-links" role="list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact" class="btn btn-primary">Contact</a></li>
+          <li><a href="/" class={isActive('/') ? 'active' : ''} aria-current={isActive('/') ? 'page' : undefined}>Home</a></li>
+          <li><a href="/services" class={isActive('/services') ? 'active' : ''} aria-current={isActive('/services') ? 'page' : undefined}>Services</a></li>
+          <li><a href="/about" class={isActive('/about') ? 'active' : ''} aria-current={isActive('/about') ? 'page' : undefined}>About</a></li>
+          <li><a href="/contact" class={isActive('/contact') ? 'active' : ''} aria-current={isActive('/contact') ? 'page' : undefined}>Contact</a></li>
         </ul>
         <div class="nav-actions">
           <button class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
@@ -272,8 +278,20 @@ const {
     color: var(--color-text);
   }
 
-  .nav-links .btn {
-    color: white;
+  .nav-links a.active {
+    color: var(--color-text);
+    position: relative;
+  }
+
+  .nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-accent-light);
+    border-radius: 1px;
   }
 
   .nav-actions {
